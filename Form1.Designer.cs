@@ -32,14 +32,17 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             button1 = new Button();
-            label4 = new Label();
+            label3 = new Label();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Image = Properties.Resources.profile_1;
             resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
@@ -56,12 +59,6 @@
             label2.Name = "label2";
             label2.Click += label2_Click;
             // 
-            // label3
-            // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
-            label3.Click += label3_Click;
-            // 
             // button1
             // 
             resources.ApplyResources(button1, "button1");
@@ -69,19 +66,33 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label4
+            // label3
             // 
-            resources.ApplyResources(label4, "label4");
-            label4.Name = "label4";
-            label4.Click += label4_Click;
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(button2, "button2");
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(button3, "button3");
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label4);
-            Controls.Add(button1);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(label3);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -97,8 +108,9 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
-        private Label label3;
         private Button button1;
-        private Label label4;
+        private Label label3;
+        private Button button2;
+        private Button button3;
     }
 }

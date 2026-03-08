@@ -37,5 +37,15 @@ namespace WinFormsApp
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/seong-sw");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.profile;
+        }
     }
 }
