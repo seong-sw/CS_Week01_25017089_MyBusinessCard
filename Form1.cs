@@ -5,6 +5,8 @@ namespace WinFormsApp
         public Form1()
         {
             InitializeComponent();
+            pictureBox1.MouseEnter += pictureBox1_MouseEnter;
+            pictureBox1.MouseLeave += pictureBox1_MouseLeave;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -46,6 +48,15 @@ namespace WinFormsApp
         private void button3_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = Properties.Resources.profile;
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+        }
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
         }
     }
 }
